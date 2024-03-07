@@ -14,3 +14,21 @@
     height: 30vh;
     background-color: #7a9f9b;
 }
+
+@keyframes arrow_anim {
+    from { margin-top: 0px; }
+    to { margin-top: 5px; }
+}
+ 
+#arrow {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgb(255, 255, 255);
+    height: 0; 
+    width: 0; 
+
+    margin-left: 36vw;
+
+    animation: arrow_anim .3s steps(3) infinite;
+}
+ 
